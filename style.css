@@ -28,6 +28,14 @@
     color: var(--gray-clr);
 }
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 img{
     max-width: 100%;
     height: auto;
@@ -92,6 +100,40 @@ letter-spacing: .2rem;
 font-size: .8rem;
 }
 
+.about-me{
+    width: 35rem;
+}
+
+.section-container{
+    padding-block: 4rem;
+}
+
+.glow{
+    position: relative;
+}
+
+.glow::before{
+    content: "";
+    background: var(--green-clr);
+    position: absolute;
+    inset: 4rem;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(70px);
+}
+
+.hover-card:hover{
+    background: var(--green-clr);
+}
+
+.hover-card:hover *{
+    color: black !important;
+}
+
+.mycard{
+    width: 21rem;
+}
+
 
 
 
@@ -113,5 +155,9 @@ font-size: .8rem;
    
     .hero-section{
         min-height: 72vh;
+    }
+
+    .about-me{
+        width: 23rem;
     }
 }
